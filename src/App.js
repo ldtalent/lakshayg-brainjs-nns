@@ -5,7 +5,7 @@ import { connect} from "react-redux";
 import {PropTypes} from 'prop-types'
 import {trainNetwork, result , white, black, predict} from './actions/contrastpicker.js'
 const App=({trainNetwork, training, result, resultN, white, red, green , blue, whiteReturning, blackReturning, black, predict, closeResult}) =>  {
-  
+  //it runs everytime the page reloads
     useEffect(() => {
       console.log('Hello')
      trainNetwork();
